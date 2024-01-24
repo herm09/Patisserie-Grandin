@@ -1,9 +1,12 @@
 .footer {
     display: flex;
+    height: 20vh;
 
     .contact {
         display: flex;
         flex-direction: column;
+        font-family: $font-family;
+        margin-left: 40px;
     }
 
     #scroll_to_top {
