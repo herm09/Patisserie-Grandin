@@ -129,6 +129,7 @@ header .socialLinks img {
 
 .menu {
   display: flex;
+  flex-direction: column;
   margin-top: 20px;
   height: 100vh;
 }
@@ -137,19 +138,65 @@ header .socialLinks img {
   font-size: 2.5em;
   color: #000000;
   align-items: flex-start;
-  width: 50%;
+  width: 70%;
   margin-left: 117px;
+}
+.menu p {
+  display: flex;
+  margin-top: 10px;
+  font-family: "QuickSand", sans-serif;
+  font-size: 1.3em;
+  color: #000000;
+  margin-left: 117px;
+}
+.menu .plats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  width: 100%;
+  gap: 40px;
+  overflow: hidden;
+}
+.menu .plats img {
+  width: 25%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 0.3em;
+  transition: transform 0.3s ease-in-out;
+  transform-origin: center top;
+}
+.menu .plats img:hover {
+  transform: scale(1.1);
 }
 
 .footer {
   display: flex;
-  height: 20vh;
+  height: 30vh;
 }
-.footer .contact {
+.footer .infos {
+  display: flex;
+  width: 100%;
+  gap: 150px;
+  justify-content: center;
+}
+.footer .infos .contact {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   font-family: "QuickSand", sans-serif;
   margin-left: 40px;
+}
+.footer .infos .horaires {
+  display: flex;
+  margin-top: 23px;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "QuickSand", sans-serif;
+}
+.footer .infos .horaires p {
+  display: flex;
+  justify-content: center;
 }
 .footer #scroll_to_top {
   position: fixed;
