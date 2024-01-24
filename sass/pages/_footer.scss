@@ -1,13 +1,12 @@
 .footer {
     display: flex;
-    height: 30vh;
+    height: 35vh;
 
     .infos {
         display: flex;
         width: 100%;
-        gap: 150px;
+        gap: 160px;
         justify-content: center;
-
 
         .contact {
             display: flex;
@@ -15,6 +14,14 @@
             justify-content: center;
             font-family: $font-family;
             margin-left: 40px;
+
+            h1 {
+                font-size: 2.2em;
+            }
+
+            p {
+                font-size: 1.2em;
+            }
         }
     
         .horaires {
@@ -27,6 +34,7 @@
             p {
                 display: flex;
                 justify-content: center;
+                font-size: 1.2em;
             }
         }
     }
