@@ -8,19 +8,19 @@ header {
   display: flex;
   margin-top: 20px;
 }
-header .menu {
+header .header {
   display: flex;
   width: 100%;
   justify-content: space-between;
   align-items: center;
   margin-left: 40px;
 }
-header .menu img {
+header .header img {
   width: 90px;
   height: 90px;
   border-radius: 50%;
 }
-header .menu ul {
+header .header ul {
   display: flex;
   list-style: none;
   margin-left: 40px;
@@ -28,11 +28,11 @@ header .menu ul {
   align-items: center;
   justify-content: center;
 }
-header .menu ul li {
+header .header ul li {
   list-style: none;
   cursor: pointer;
 }
-header .menu ul li a {
+header .header ul li a {
   text-decoration: none;
   color: #000000;
   list-style: none;
@@ -45,7 +45,7 @@ header .menu ul li a {
   font-family: "QuickSand", sans-serif;
   font-size: 1.5em;
 }
-header .menu ul li a:hover {
+header .header ul li a:hover {
   background-size: 100% 2px;
 }
 header .socialLinks {
@@ -125,6 +125,20 @@ header .socialLinks img {
 .decouvrir .imgS1 .img1 img:hover,
 .decouvrir .imgS1 .img2 img:hover {
   transform: scale(1.1);
+}
+
+.menu {
+  display: flex;
+  margin-top: 20px;
+  height: 100vh;
+}
+.menu h1 {
+  font-family: "QuickSand", sans-serif;
+  font-size: 2.5em;
+  color: #000000;
+  align-items: flex-start;
+  width: 50%;
+  margin-left: 117px;
 }
 
 /*# sourceMappingURL=style.css.map */
