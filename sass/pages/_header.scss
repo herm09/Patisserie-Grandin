@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    margin-top: 20px;
+
+    .menu {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 40px;
+    
+        img {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+        }
+    
+        ul {
+            display: flex;
+            list-style: none;
+            margin-left: 40px;
+            gap: 50px;
+            align-items: center;
+            justify-content: center;
+    
+            li {
+                list-style: none;
+                cursor: pointer;
+    
+                a {
+                    text-decoration: none;
+                    color: $color-text-1;
+                    list-style: none;
+                    display: inline-block;
+                    padding-bottom: 2px; /* the space for the gradient */
+                    background: linear-gradient($color-text-1, $color-text-1) center bottom; /* OR bottom right OR bottom left */
+                    background-size: 0% 2px; /* width:0% height:2px */
+                    background-repeat: no-repeat; /* Don't repeat !!*/
+                    transition: all 0.45s;
+                    font-family: $font-family;
+                    font-size: 1.5em;
+                }
+    
+                a:hover {
+                    background-size: 100% 2px;
+                }
+            }
+        }
+    }
+
+    .socialLinks {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+
+        img {
+            width: 50px;
+            height: 50px;
+        }
+    }
+}

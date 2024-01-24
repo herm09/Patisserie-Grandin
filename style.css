@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  margin-top: 20px;
+}
+header .menu {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 40px;
+}
+header .menu img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+header .menu ul {
+  display: flex;
+  list-style: none;
+  margin-left: 40px;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+}
+header .menu ul li {
+  list-style: none;
+  cursor: pointer;
+}
+header .menu ul li a {
+  text-decoration: none;
+  color: #000000;
+  list-style: none;
+  display: inline-block;
+  padding-bottom: 2px; /* the space for the gradient */
+  background: linear-gradient(#000000, #000000) center bottom; /* OR bottom right OR bottom left */
+  background-size: 0% 2px; /* width:0% height:2px */
+  background-repeat: no-repeat; /* Don't repeat !!*/
+  transition: all 0.45s;
+  font-family: "QuickSand", sans-serif;
+  font-size: 1.5em;
+}
+header .menu ul li a:hover {
+  background-size: 100% 2px;
+}
+header .socialLinks {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+header .socialLinks img {
+  width: 50px;
+  height: 50px;
+}
+
+.decouvrir {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  height: 310vh;
+}
+.decouvrir .imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.decouvrir .imageContainer img {
+  width: 80%;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 0.3em;
+}
+.decouvrir .text1 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  width: 100%;
+}
+.decouvrir .text1 h1 {
+  font-family: "QuickSand", sans-serif;
+  font-size: 2.5em;
+  color: #000000;
+  align-items: flex-start;
+  width: 50%;
+  margin-left: 117px;
+}
+.decouvrir .text1 p {
+  display: flex;
+  justify-content: center;
+  font-family: "QuickSand", sans-serif;
+  font-size: 1.3em;
+  color: #000000;
+  align-items: center;
+}
+.decouvrir .imgS1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  width: 100%;
+  gap: 15px;
+}
+.decouvrir .imgS1 .img1,
+.decouvrir .imgS1 .img2 {
+  display: flex;
+  gap: 40px;
+  overflow: hidden;
+}
+.decouvrir .imgS1 .img1 img,
+.decouvrir .imgS1 .img2 img {
+  width: 50%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 0.3em;
+  transition: transform 0.3s ease-in-out;
+  transform-origin: center top;
+}
+.decouvrir .imgS1 .img1 img:hover,
+.decouvrir .imgS1 .img2 img:hover {
+  transform: scale(1.1);
+}
+
+/*# sourceMappingURL=style.css.map */
